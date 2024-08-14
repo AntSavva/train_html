@@ -1,0 +1,131 @@
+.header{
+    height: 80px;
+    width: 100%;
+    background-color: white;
+}
+
+.header_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact_button{
+    background-color: #FF9100;
+    color: white;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 100px;
+}
+
+nav{
+    color: #4F5665;
+}
+ul{
+    display: flex;
+}
+
+li{
+    padding: 20px;
+    list-style-type: none
+}
+
+.button_sign_in{
+    color: #0B132A;
+    font-weight: 600;
+    font-size: 14px;
+   
+}
+
+
+.button_sign_up{
+    color: #F53855;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: #F53855 2px solid;
+}
+
+.header_buttons{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.header_burger{
+    display: none;
+}
+
+/* _______________________header________________________________ */
+
+
+/* .main_page_texts, .main_page_pictures {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+    box-sizing: border-box; 
+  } */
+
+.main_page_content{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 800px;
+}
+
+h1{
+    font-size: 68px;
+    /* text-transform: uppercase; */
+    color: #0B132A;
+    margin: 20px 0px;
+}
+
+.main_page_texts{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_page_about{
+    margin: 40px 0px;
+    color: #4F5665;
+    font-size: 20px;
+}
+
+.main_page_button{
+    background-color: #F53838;
+    padding: 10px 40px;
+    color: white;
+    box-shadow: 0 20px 30px rgba(202, 13, 13, 0.377);
+    max-width: 200px; /*  пробовал понять как кнопку исправить после применения flex, пробовал через max-width сделать, но шакально получается, как правильно сделать? */
+}
+
+.main_page_pictures{
+    width: 45%;
+}
+
+@media (max-width: 1200px) {
+    .container {
+      width: 1000px;
+    }
+
+    nav, .header_buttons {
+        display: none;
+    }
+    .header_burger{
+        display: block;
+    }
+  }
