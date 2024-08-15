@@ -124,7 +124,25 @@ h1{
     background-color: white;
     box-shadow: 0px 40px 100px rgba(20, 20, 20, 0.233);
     margin: 50px auto;
-    display: flex
+    display: flex;
+    position: relative;
+}
+
+.line1, .line2{
+    position: absolute;
+    height: 100px;
+    width: 2px;
+    background-color: #EEEFF2;
+    top: 25%
+}
+
+.line1{
+    left: 33%;
+    
+}
+
+.line2{
+    left: 66%;
 }
 
 .digits_item{
