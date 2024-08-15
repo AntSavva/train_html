@@ -1,50 +1,55 @@
-.header{
+.header {
     height: 80px;
     width: 100%;
     background-color: white;
 }
 
-.header_content{
+.header_content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.contact_button{
+.contact_button {
     background-color: #FF9100;
     color: white;
 }
 
-.container{
+.container {
     width: 80%;
     margin: 0 auto;
 }
 
-.logo{
+.logo {
     width: 100px;
 }
-
-nav{
+/* плохая история использовать у виде селекторов теги не изолировав их */
+/* лучший варинат тут был бы .header_content > nav либо дать класс этому nav */
+nav {
     color: #4F5665;
 }
-ul{
+/* тажа история */
+
+ul {
     display: flex;
+    padding: 0;
+    gap: 16px;
 }
 
-li{
+li {
     padding: 20px;
     list-style-type: none
 }
 
-.button_sign_in{
+.button_sign_in {
     color: #0B132A;
     font-weight: 600;
     font-size: 14px;
-   
+
 }
 
 
-.button_sign_up{
+.button_sign_up {
     color: #F53855;
     font-weight: 600;
     font-size: 14px;
@@ -53,15 +58,15 @@ li{
     border: #F53855 2px solid;
 }
 
-.header_buttons{
+.header_buttons {
     width: 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
-.header_burger{
+.header_burger {
     display: none;
 }
 
@@ -77,21 +82,21 @@ li{
     box-sizing: border-box; 
   } */
 
-.main_page_content{
+.main_page_content {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     height: 800px;
 }
 
-h1{
+h1 {
     font-size: 68px;
     /* text-transform: uppercase; */
     color: #0B132A;
     margin: 20px 0px;
 }
 
-.main_page_texts{
+.main_page_texts {
     height: 100%;
     width: 45%;
     display: flex;
@@ -99,25 +104,27 @@ h1{
     justify-content: center;
 }
 
-.main_page_about{
+.main_page_about {
     margin: 40px 0px;
     color: #4F5665;
     font-size: 20px;
 }
 
-.main_page_button{
+.main_page_button {
     background-color: #F53838;
     padding: 10px 40px;
     color: white;
     box-shadow: 0 20px 30px rgba(202, 13, 13, 0.377);
-    max-width: 200px; /*  пробовал понять как кнопку исправить после применения flex, пробовал через max-width сделать, но шакально получается, как правильно сделать? */
+    max-width: 200px;
+    /*  пробовал понять как кнопку исправить после применения flex, пробовал через max-width сделать, но шакально получается, как правильно сделать? */
 }
 
 
- /* ______________________advantages___________________  */
+/* ______________________advantages___________________  */
 
 
-.digits{
+/* тут идеально подошел бы display grid */
+.digits {
     width: 100%;
     height: 200px;
     border-radius: 30px;
@@ -128,7 +135,8 @@ h1{
     position: relative;
 }
 
-.line1, .line2{
+.line1,
+.line2 {
     position: absolute;
     height: 100px;
     width: 2px;
@@ -136,16 +144,16 @@ h1{
     top: 25%
 }
 
-.line1{
+.line1 {
     left: 33%;
-    
+
 }
 
-.line2{
+.line2 {
     left: 66%;
 }
 
-.digits_item{
+.digits_item {
     width: 33%;
     height: 100%;
     display: flex;
@@ -153,35 +161,37 @@ h1{
     align-items: center;
 }
 
-.digits_item_photo{
+.digits_item_photo {
     width: 80px;
     margin-right: 20px;
 }
 
 
-.digits_item_count{
+.digits_item_count {
     font-weight: 900;
     font-size: 26px;
     margin-bottom: 10px;
 }
 
-.digits_item_text{
+.digits_item_text {
     font-size: 20px;
 }
 
-.main_page_pictures{
+.main_page_pictures {
     width: 45%;
 }
 
 @media (max-width: 1200px) {
     .container {
-      width: 1000px;
+        width: 1000px;
     }
 
-    nav, .header_buttons {
+    nav,
+    .header_buttons {
         display: none;
     }
-    .header_burger{
+
+    .header_burger {
         display: block;
     }
-  }
+}
